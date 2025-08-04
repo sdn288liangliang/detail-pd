@@ -18,7 +18,6 @@
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/css/main.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.datatables.net/2.2.2/css/dataTables.dataTables.min.css">
 
 </head>
 
@@ -85,9 +84,6 @@
 
       <div class="row no-gutter">
         <div class="col-10 col-sm-12 mx-auto pb-5">
-          <div class="title-100 mt-5 pb-5">
-            <h3>Data Siswa Per Kelas</h3>
-          </div>
           <div class="card-group">
 
             <div class="card p-3">
@@ -274,58 +270,9 @@
 
   <div id="preloader"></div>
 
-  <script>
-    {
-      {
-        // Your API KEY
-        const API_KEY = "AIzaSyCZNpoihaLmoSzdEeUfh6bSP9d3gxFzd9A";
-
-        function displayResult2(response) {
-          let tableHead = "";
-          let tableBody = "";
-
-          response.result.values.forEach((row, index) => {
-            tableBody += "<tr>";
-            row.forEach((val) => (tableBody += "<td>" + val + "</td>"));
-            tableBody += "</tr>";
-          });
-
-          $('#siswaTable').DataTable({
-            "data": response.result.values,
-            columnDefs: [{
-              "target": "_all",
-              "defaultContent": "-"
-            }]
-          })
-        }
-
-        function loadData() {
-          // Spreadsheet ID
-          const spreadsheetId = "15scceqaWxWw-sNWghtAs5O-CLIFp8hY7Kphg5wHSeoU";
-          const range = "A:Z";
-          getPublicValues({
-            spreadsheetId,
-            range
-          }, displayResult2);
-        }
-
-        window.addEventListener("load", (e) => {
-          initOAuthClient({
-            apiKey: API_KEY
-          });
-        });
-
-        document.addEventListener("gapi-loaded", (e) => {
-          loadData();
-        });
-      }
-    }
-  </script>
-
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://cdn.datatables.net/2.2.2/js/dataTables.min.js"></script>
   <script src="https://apis.google.com/js/api.js"></script>
   <script src="assets/js/easyData-google-sheets.js"></script>
   <script src="assets/js/main.js"></script>
