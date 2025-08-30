@@ -67,37 +67,6 @@
          col.innerHTML = html;
          container.appendChild(col);
 
-         // Aktifkan DataTables
-         setTimeout(() => {
-            $(`#table${index}`).DataTable({
-               paging: true,
-               searching: false,
-               ordering: true,
-               pageLength: 9,
-               lengthMenu: [5, 10, 20, 50],
-               dom: "Bfrtip",
-               buttons: [{
-                     extend: "excel",
-                     text: "⬇️ Excel"
-                  },
-                  {
-                     extend: "pdf",
-                     text: "⬇️ PDF"
-                  },
-                  {
-                     extend: "print",
-                     text: "🖨️ Print"
-                  }
-               ],
-               language: {
-                  search: "🔍 Cari:",
-                  lengthMenu: "Tampilkan _MENU_ data",
-                  info: "Menampilkan _START_ sampai _END_ dari _TOTAL_ data",
-                  zeroRecords: "Tidak ada data",
-               }
-            });
-         }, 100);
-
          // Tambahkan checkbox untuk hide/show sheet
          const checkboxList = document.getElementById("checkboxList");
          const div = document.createElement("div");

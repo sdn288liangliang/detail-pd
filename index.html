@@ -93,20 +93,16 @@
     </div>
 
     <div class="container mt-4 mb-5" style="font-size: 80%;" data-aos="fade-up">
-      <div class="row no-gutter">
-
+      <div class="row">
         <!-- Checkbox Hide/Show -->
         <div id="checkboxContainer" class="checkbox-container mb-4">
           <label class="fw-bold">Tampilkan/Sembunyikan Data:</label>
           <div id="checkboxList" class="row"></div>
         </div>
-
         <!-- Kontainer Semua Sheet -->
         <div id="sheetContainer" class="row g-4"></div>
-
       </div>
       </section>
-
   </main>
 
   <footer id="footer" class="footer dark-background">
@@ -159,7 +155,38 @@
       class="bi bi-arrow-up-short"></i></a>
 
   <div id="preloader"></div>
-
+  <script>
+    // Aktifkan DataTables
+    setTimeout(() => {
+      $(`#table${index}`).DataTable({
+        paging: true,
+        searching: false,
+        ordering: true,
+        pageLength: 9,
+        lengthMenu: [5, 10, 20, 50],
+        dom: "Bfrtip",
+        buttons: [{
+            extend: "excel",
+            text: "⬇️ Excel"
+          },
+          {
+            extend: "pdf",
+            text: "⬇️ PDF"
+          },
+          {
+            extend: "print",
+            text: "🖨️ Print"
+          }
+        ],
+        language: {
+          search: "🔍 Cari:",
+          lengthMenu: "Tampilkan _MENU_ data",
+          info: "Menampilkan _START_ sampai _END_ dari _TOTAL_ data",
+          zeroRecords: "Tidak ada data",
+        }
+      });
+    }, 100);
+  </script>
   <script src="assets/js/darisheet.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
