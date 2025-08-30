@@ -19,6 +19,20 @@
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/css/main.css" rel="stylesheet">
 
+  <!-- DataTables CSS -->
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.4.2/css/buttons.dataTables.min.css">
+
+  <!-- jQuery & DataTables JS -->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/buttons/2.4.2/js/dataTables.buttons.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/pdfmake.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js"></script>
+  <script src="https://cdn.datatables.net/buttons/2.4.2/js/buttons.html5.min.js"></script>
+  <script src="https://cdn.datatables.net/buttons/2.4.2/js/buttons.print.min.js"></script>
+
 </head>
 
 <body class="blog-page">
@@ -81,261 +95,15 @@
 
     <div class="container mt-4 mb-5" style="font-size: 85%;" data-aos="fade-up">
       <div class="row no-gutter">
-        <div class="col-10 col-sm-12 mx-auto pb-5">
-          <div class="card-group">
 
-            <div class="card p-3">
-              <img src="/assets/img/logo-288.png" class="card-img-top img-fluid" alt="...">
-              <div class="card-body">
-                <h4 class="card-title">Kelas 1</h4>
-                <h6 class="fw-bold">Wali Kelas: Jumriani, S.Pd.</h6>
-                <p class="card-text text-decoration-underline">Jumlah Siswa</p>
-                <p class="card-text">Laki-Laki: <strong>5 Orang</strong></p>
-                <p class="card-text">Perempuan: <strong>3 Orang</strong></p>
-                <table class="table">
-                  <thead>
-                    <tr>
-                      <th scope="col">No</th>
-                      <th scope="col">Nama</th>
-                      <th scope="col">NIPD</th>
-                      <th scope="col">JK</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th scope="row">1</th>
-                      <td>Mark</td>
-                      <td>Otto</td>
-                      <td>L</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">2</th>
-                      <td>Jacob</td>
-                      <td>Thornton</td>
-                      <td>L</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">3</th>
-                      <td>Larry</td>
-                      <td>the Bird</td>
-                      <td>P</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-
-            <div class="card p-3">
-              <img src="/assets/img/logo-288.png" class="card-img-top img-fluid" alt="...">
-              <div class="card-body">
-                <h4 class="card-title">Kelas 2</h4>
-                <h6 class="fw-bold">Wali Kelas: Dahlia, S.Pd.</h6>
-                <p class="card-text text-decoration-underline">Jumlah Siswa</p>
-                <p class="card-text">Laki-Laki: <strong>6 Orang</strong></p>
-                <p class="card-text">Perempuan: <strong>3 Orang</strong></p>
-                <table class="table">
-                  <thead>
-                    <tr>
-                      <th scope="col">No</th>
-                      <th scope="col">Nama</th>
-                      <th scope="col">NIPD</th>
-                      <th scope="col">JK</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th scope="row">1</th>
-                      <td>Mark</td>
-                      <td>Otto</td>
-                      <td>L</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">2</th>
-                      <td>Jacob</td>
-                      <td>Thornton</td>
-                      <td>L</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">3</th>
-                      <td>Larry</td>
-                      <td>the Bird</td>
-                      <td>P</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-
-            <div class="card p-3">
-              <img src="/assets/img/logo-288.png" class="card-img-top img-fluid" alt="...">
-              <div class="card-body">
-                <h4 class="card-title">Kelas 3</h4>
-                <h6 class="fw-bold">Wali Kelas: Suharni, S.Pd., Gr.</h6>
-                <p class="card-text text-decoration-underline">Jumlah Siswa</p>
-                <p class="card-text">Laki-Laki: <strong>7 Orang</strong></p>
-                <p class="card-text">Perempuan: <strong>2 Orang</strong></p>
-                <table class="table">
-                  <thead>
-                    <tr>
-                      <th scope="col">No</th>
-                      <th scope="col">Nama</th>
-                      <th scope="col">NIPD</th>
-                      <th scope="col">JK</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th scope="row">1</th>
-                      <td>Mark</td>
-                      <td>Otto</td>
-                      <td>L</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">2</th>
-                      <td>Jacob</td>
-                      <td>Thornton</td>
-                      <td>L</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">3</th>
-                      <td>Larry</td>
-                      <td>the Bird</td>
-                      <td>P</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-          <div class="col-10 col-sm-12 mx-auto pb-5">
-            <div class="card-group">
-              <div class="card p-3">
-                <img src="/assets/img/logo-288.png" class="card-img-top img-fluid" alt="...">
-                <div class="card-body">
-                  <h4 class="card-title">Kelas 4</h4>
-                  <h6 class="fw-bold">Wali Kelas: Irma Handayani, S.Pd., Gr.</h6>
-                  <p class="card-text text-decoration-underline">Jumlah Siswa</p>
-                  <p class="card-text">Laki-Laki: <strong>7 Orang</strong></p>
-                  <p class="card-text">Perempuan: <strong>4 Orang</strong></p>
-                  <table class="table">
-                    <thead>
-                      <tr>
-                        <th scope="col">No</th>
-                        <th scope="col">Nama</th>
-                        <th scope="col">NIPD</th>
-                        <th scope="col">JK</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>L</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>L</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">3</th>
-                        <td>Larry</td>
-                        <td>the Bird</td>
-                        <td>P</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-
-              <div class="card p-3">
-                <img src="/assets/img/logo-288.png" class="card-img-top img-fluid" alt="...">
-                <div class="card-body">
-                  <h4 class="card-title">Kelas 5</h4>
-                  <h6 class="fw-bold">Wali Kelas: Andi Ratu Mulya, S.Pd., Gr.</h6>
-                  <p class="card-text text-decoration-underline">Jumlah Siswa</p>
-                  <p class="card-text">Laki-Laki: <strong>9 Orang</strong></p>
-                  <p class="card-text">Perempuan: <strong>6 Orang</strong></p>
-                  <table class="table">
-                    <thead>
-                      <tr>
-                        <th scope="col">No</th>
-                        <th scope="col">Nama</th>
-                        <th scope="col">NIPD</th>
-                        <th scope="col">JK</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>L</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>L</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">3</th>
-                        <td>Larry</td>
-                        <td>the Bird</td>
-                        <td>P</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-
-              <div class="card p-3">
-                <img src="/assets/img/logo-288.png" class="card-img-top img-fluid" alt="...">
-                <div class="card-body">
-                  <h4 class="card-title">Kelas 6</h4>
-                  <h6 class="fw-bold">Wali Kelas: Muniati, S.Pd., Gr.</h6>
-                  <p class="card-text text-decoration-underline">Jumlah Siswa</p>
-                  <p class="card-text">Laki-Laki: <strong>6 Orang</strong></p>
-                  <p class="card-text">Perempuan: <strong>14 Orang</strong></p>
-                  <table class="table">
-                    <thead>
-                      <tr>
-                        <th scope="col">No</th>
-                        <th scope="col">Nama</th>
-                        <th scope="col">NIPD</th>
-                        <th scope="col">JK</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>L</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>L</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">3</th>
-                        <td>Larry</td>
-                        <td>the Bird</td>
-                        <td>P</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-
-            </div>
-
-          </div>
+        <!-- Checkbox Hide/Show -->
+        <div id="checkboxContainer" class="checkbox-container mb-4">
+          <label class="fw-bold">Tampilkan/Sembunyikan Data:</label>
+          <div id="checkboxList" class="row"></div>
         </div>
+
+        <!-- Kontainer Semua Sheet -->
+        <div id="sheetContainer" class="row g-4"></div>
 
       </div>
       </section>
@@ -393,11 +161,10 @@
 
   <div id="preloader"></div>
 
+  <script src="assets/js/darisheet.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://apis.google.com/js/api.js"></script>
-  <script src="assets/js/easyData-google-sheets.js"></script>
   <script src="assets/js/main.js"></script>
 
 </body>
